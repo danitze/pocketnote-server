@@ -1,0 +1,12 @@
+ktor:
+    application:
+        modules:
+            - example.com.ApplicationKt.module
+    deployment:
+        port: 8080
+jwt:
+  domain: "https://jwt-provider-domain/"
+  secret: "ddb75e57193b00d397a259d7e2d82dcea507776bbd1ab9c8fe6d0d93e7cedb95"
+  issuer: "pocketnote-server"
+  audience: "http://0.0.0.0:8080/hello"
+  realm: "Access to 'hello'"
